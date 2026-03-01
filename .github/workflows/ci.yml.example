@@ -1,0 +1,76 @@
+# GitHub Actions CI/CD Pipeline Example
+# Rename this file to ci.yml and place in .github/workflows/ to enable
+
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-server:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install server dependencies
+      working-directory: ./server
+      run: npm install
+      
+    - name: Run server tests
+      working-directory: ./server
+      run: npm test
+      
+    - name: Build server
+      working-directory: ./server
+      run: npm run build
+
+  test-client:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install client dependencies
+      working-directory: ./client
+      run: npm install
+      
+    - name: Run client tests
+      working-directory: ./client
+      run: npm test
+      
+    - name: Build client
+      working-directory: ./client
+      run: npm run build
+
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm run install-all
+      
+    - name: Run ESLint
+      run: |
+        cd server && npm run lint || true
+        cd ../client && npm run lint || true
