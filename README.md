@@ -140,8 +140,8 @@ npm run dev
 ```
 
 This starts both servers concurrently:
-- 🎨 Frontend: http://localhost:5173 (or 5174 if 5173 is in use)
-- ⚡ Backend: http://localhost:5001
+- Frontend: http://localhost:5173 (or 5174 if 5173 is in use)
+- Backend: http://localhost:5001
 
 **Or run servers separately:**
 
@@ -508,7 +508,7 @@ npm run dev
 
 This project is licensed under the ISC License.
 
-## hris Randolph**
+## Christopher Randolph**
 - GitHub: [@car6719](https://github.com/car6719)
 - Repository: [o-sweng861-capstone-910380890](https://github.com/car6719/o-sweng861-capstone-910380890)
 
