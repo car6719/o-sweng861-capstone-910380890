@@ -1,14 +1,8 @@
-# 🎓 Campus Pay - A Smart Wallet for Student Payments
+# Campus Pay - A Smart Wallet for Student Payments
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express.js-404D59?style=flat)](https://expressjs.com/)
-[![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat&logo=stripe&logoColor=white)](https://stripe.com/)
+**GitHub Repository:** [https://github.com/car6719/o-sweng861-capstone-910380890](https://github.com/car6719/o-sweng861-capstone-910380890)
 
-**🔗 GitHub Repository:** [https://github.com/car6719/o-sweng861-capstone-910380890](https://github.com/car6719/o-sweng861-capstone-910380890)
-
-## 📋 Project Overview
+## Project Overview
 
 Campus Pay is a full-stack web application that provides a unified, secure, and intuitive digital wallet for managing student payments at universities. The platform streamlines payment processing by consolidating tuition, dining dollars, lab fees, and other charges into a single interface, eliminating the confusion and inefficiencies caused by disconnected systems.
 
@@ -16,17 +10,17 @@ Campus Pay is a full-stack web application that provides a unified, secure, and 
 
 ### Key Features
 
-#### 🎯 Must-Have Features (Implemented)
-- ✅ **User Authentication & Role-Based Access** - Secure JWT authentication with student and admin roles
-- ✅ **Charge Management** - Admins can create, view, and delete charges; students can view their balances
-- ✅ **Stripe Payment Integration** - Secure payment processing with support for multiple charge selection
-- ✅ **Account Ledger & Hold Management** - Automatic balance updates and hold removal after payment
-- ✅ **Payment History Dashboard** - Detailed transaction tracking with status indicators
+#### Must-Have Features (Implemented)
+- **User Authentication & Role-Based Access** - Secure JWT authentication with student and admin roles
+- **Charge Management** - Admins can create, view, and delete charges; students can view their balances
+- **Stripe Payment Integration** - Secure payment processing with support for multiple charge selection
+- **Account Ledger & Hold Management** - Automatic balance updates and hold removal after payment
+- **Payment History Dashboard** - Detailed transaction tracking with status indicators
 
-#### 🌟 Nice-to-Have Features (Implemented)
-- ✅ **Email Notification Infrastructure** - Ready to send payment reminders and confirmations
-- ✅ **Multi-Charge Payment** - Pay multiple charges in a single transaction
-- ✅ **Real-time Balance Updates** - Instant reflection of payments
+#### Nice-to-Have Features (Implemented)
+- **Email Notification Infrastructure** - Ready to send payment reminders and confirmations
+- **Multi-Charge Payment** - Pay multiple charges in a single transaction
+- **Real-time Balance Updates** - Instant reflection of payments
 
 ### Problem Statement
 
@@ -46,7 +40,7 @@ Campus Pay addresses these challenges by offering:
 - Automated hold management
 - Role-based access for students and administrators
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18 with TypeScript, Vite
 - **Backend**: Node.js with Express and TypeScript
@@ -55,7 +49,7 @@ Campus Pay addresses these challenges by offering:
 - **Authentication**: JWT with bcrypt hashing
 - **Styling**: Custom CSS with CSS variables
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -167,11 +161,11 @@ npm run dev
 
 Open your browser and navigate to:
 
-**🌐 Application URL:** http://localhost:5173 (or check terminal output for actual port)
+**Application URL:** http://localhost:5173 (or check terminal output for actual port)
 
-**📡 API Health Check:** http://localhost:5001/health
+**API Health Check:** http://localhost:5001/health
 
-## 🔐 Sample Credentials
+## Sample Credentials
 
 The application comes with pre-configured demo accounts:
 
@@ -193,7 +187,7 @@ The application comes with pre-configured demo accounts:
 
 For more test cards, see [Stripe Test Cards](https://stripe.com/docs/testing#cards)
 
-## 🧪 Running Tests
+## Running Tests
 
 ### Current Status
 The project currently uses manual testing. Automated test suites are planned for future releases.
@@ -238,7 +232,7 @@ The project currently uses manual testing. Automated test suites are planned for
 - [ ] E2E tests with Playwright or Cypress
 - [ ] Stripe webhook testing
 
-## 🐳 Docker Deployment (Optional)
+## Docker Deployment (Optional)
 
 ### Dockerfile for Server
 
@@ -303,7 +297,7 @@ Run with:
 docker-compose up
 ```
 
-## ☁️ Cloud Deployment
+## Cloud Deployment
 
 ### Backend Deployment Options
 
@@ -345,7 +339,7 @@ vercel
 - Update `VITE_API_URL` to your production API URL
 - Use production Stripe publishable key
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Campus Project Portfolio/
@@ -403,7 +397,7 @@ Campus Project Portfolio/
 └── SETUP.md                    # Detailed setup instructions
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -425,7 +419,7 @@ Campus Project Portfolio/
 - `GET /api/users` - Get all students (admin only)
 - `PUT /api/users/holds/:userId` - Manage account holds (admin only)
 
-## 🔧 Configuration Files
+## Configuration Files
 
 ### Server Configuration (`server/.env`)
 ```env
@@ -442,7 +436,7 @@ VITE_API_URL=http://localhost:5001/api      # Backend API URL
 VITE_STRIPE_PUBLISHABLE_KEY=pk_test_xxx     # Stripe public key
 ```
 
-## 🛡️ Security Notes
+## Security Notes
 
 - JWT tokens are stored in localStorage (consider httpOnly cookies for production)
 - Passwords are hashed using bcrypt with 10 salt rounds
@@ -463,7 +457,7 @@ VITE_STRIPE_PUBLISHABLE_KEY=pk_test_xxx     # Stripe public key
 - [ ] Enable database encryption
 - [ ] Implement audit logging
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 
@@ -510,7 +504,7 @@ npm run install-all
 npm run dev
 ```
 
-## 📝 License
+## License
 
 This project is licensed under the ISC License.
 
@@ -520,7 +514,7 @@ This project is licensed under the ISC License.
 
 **Campus Pay Team**
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -530,13 +524,13 @@ Contributions, issues, and feature requests are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📞 Support
+## Support
 [GitHub repository](https://github.com/car6719/o-sweng861-capstone-910380890/issues)
 For support and questions:
 - Open an issue in the GitHub repository
 - Check [SETUP.md](SETUP.md) for detailed setup instructions
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] PostgreSQL database integration
 - [ ] Unit and integration tests (Jest, Supertest)
@@ -551,7 +545,7 @@ For support and questions:
 - [ ] Refund processing
 - [ ] Analytics dashboard for admins
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Stripe API Documentation](https://stripe.com/docs/api)
 - [React Documentation](https://react.dev/)
@@ -561,4 +555,4 @@ For support and questions:
 
 ---
 
-⭐ If you find this project useful, please consider giving it a star on GitHub!
+If you find this project useful, please consider giving it a star on GitHub!
