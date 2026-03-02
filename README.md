@@ -504,10 +504,6 @@ npm run install-all
 npm run dev
 ```
 
-## License
-
-This project is licensed under the ISC License.
-
 ## Christopher Randolph**
 - GitHub: [@car6719](https://github.com/car6719)
 - Repository: [o-sweng861-capstone-910380890](https://github.com/car6719/o-sweng861-capstone-910380890)
